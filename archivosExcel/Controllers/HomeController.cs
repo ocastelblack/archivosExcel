@@ -6,16 +6,17 @@ using NPOI.XSSF.UserModel;
 using NPOI.HSSF.UserModel;
 using archivosExcel.Models.ViewModels;
 using System.Diagnostics.Contracts;
+using ProyectoExcel.Models;
 
 namespace archivosExcel.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly DBPRUEBASContext _dbocontext;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(DBPRUEBASContext context)
         {
-            _logger = logger;
+            _dbocontext = context;
         }
 
         public IActionResult Index()
