@@ -97,8 +97,8 @@ namespace archivosExcel.Controllers
                 {
                     Nombre = fila.GetCell(0).ToString(),
                     Apellido = fila.GetCell(1).ToString(),
-                    Telefono = fila.GetCell(2).ToString(),
-                    Correo = fila.GetCell(3).ToString(),
+                    direccion = fila.GetCell(2).ToString(),
+                    Fecha_nacimiento = fila.GetCell(3).ToString(),
 
                 });
             }
