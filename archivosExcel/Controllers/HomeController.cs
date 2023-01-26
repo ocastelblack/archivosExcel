@@ -1,12 +1,15 @@
 ﻿using archivosExcel.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+
+
 using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
 using NPOI.HSSF.UserModel;
 using archivosExcel.Models.ViewModels;
 using System.Diagnostics.Contracts;
 using ProyectoExcel.Models;
+using EFCore.BulkExtensions;
 
 namespace archivosExcel.Controllers
 {
