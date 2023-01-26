@@ -40,7 +40,7 @@ namespace ProyectoExcel.Models
                     .HasMaxLength(40)
                     .IsUnicode(false);
 
-                entity.Property(e => e.Correo)
+                entity.Property(e => e.direccion)
                     .HasMaxLength(40)
                     .IsUnicode(false);
 
@@ -48,7 +48,7 @@ namespace ProyectoExcel.Models
                     .HasMaxLength(40)
                     .IsUnicode(false);
 
-                entity.Property(e => e.Telefono)
+                entity.Property(e => e.Fecha_nacimiento)
                     .HasMaxLength(40)
                     .IsUnicode(false);
             });
